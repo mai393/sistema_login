@@ -27,7 +27,7 @@
 
 ## Usuários de teste
 
-Email: [joao@gmail.com](mailto:joao@gmail.com)
+Email: [caio@gmail.com](mailto:caio@gmail.com)
 Senha: (senha cadastrada)
 
 ## Estrutura

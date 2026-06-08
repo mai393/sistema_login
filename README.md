@@ -23,7 +23,7 @@
 1. Importar banco sistema_login.sql
 2. Configurar credenciais em includes/conexao.php
 3. Iniciar Apache e MySQL
-4. Acessar http://localhost/projeto
+4. Acessar http://localhost/sistema_login/
 
 ## Usuários de teste
 

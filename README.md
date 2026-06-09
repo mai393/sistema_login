@@ -1,15 +1,18 @@
-# sistema_login
+# Sistema Login PHP
+
 ## Recursos
 
 * Cadastro de usuários
 * Login e Logout
 * Perfil do usuário
-* Alteração de email
+* Alteração de e-mail
 * Alteração de senha
 * Upload de foto de perfil
 * Sistema de anotações
 * Proteção contra SQL Injection
-* Senha criptografada com password_hash()
+* Senhas criptografadas com `password_hash()`
+* Página inicial (`index.php`)
+* Compatível com hospedagem InfinityFree
 
 ## Tecnologias
 
@@ -18,24 +21,52 @@
 * Bootstrap 5
 * PDO
 
-## Como executar
+## Como executar localmente
 
-1. Importar banco sistema_login.sql
-2. Configurar credenciais em includes/conexao.php
-3. Iniciar Apache e MySQL
-4. Acessar http://localhost/sistema_login/
+1. Importe o banco de dados `sistema_login.sql`.
+2. Configure as credenciais em `includes/conexao.php`.
+3. Inicie o Apache e o MySQL.
+4. Acesse:
 
-## Usuários de teste
+```text
+http://localhost/sistema_login/
+```
 
-Email: [caio@gmail.com](mailto:caio@gmail.com)
-Senha: (senha cadastrada)
+## Hospedagem no InfinityFree
 
-## Estrutura
+1. Crie uma conta no InfinityFree.
+2. Crie um banco de dados MySQL no painel.
+3. Importe o arquivo `sistema_login.sql`.
+4. Atualize as credenciais em `includes/conexao.php`.
+5. Envie todos os arquivos para a pasta `htdocs`.
+6. Acesse o domínio fornecido pelo InfinityFree.
 
-* login.php
-* cadastro.php
-* dashboard.php
-* profile.php
-* notes.php
-* includes/
-* uploads/
+## Usuário de teste
+
+E-mail: [caio@gmail.com](mailto:caio@gmail.com)
+
+Senha: (utilize a senha cadastrada no banco)
+
+## Estrutura do Projeto
+
+```text
+index.php
+login.php
+cadastro.php
+dashboard.php
+profile.php
+notes.php
+
+includes/
+ ├─ conexao.php
+ ├─ auth.php
+
+uploads/
+```
+
+## Segurança
+
+* Prepared Statements com PDO
+* Proteção contra SQL Injection
+* Senhas armazenadas com `password_hash()`
+* Verificação de sessão para páginas protegidas

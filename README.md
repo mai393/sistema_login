@@ -16,9 +16,9 @@
 
 ## Tecnologias
 
-* PHP 8
+* PHP procedural com templates inline/PHP “mixed with HTML”
 * MySQL
-* Bootstrap 5
+* Bootstrap 5.3.3
 * PDO
 
 ## Como executar localmente
